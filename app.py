@@ -31,8 +31,11 @@ app.config['STATIC_FOLDER'] = 'static'
 app.config['DEBUG'] = False
 app.config['ENV'] = 'production'
 
-# PostgreSQL connection
-app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get('DATABASE_URL', 'postgresql://adil_database_user:ADSnWcp5ngzXNC7kt5ZuC0YPu3gubAz8@dpg-cvor58k9c44c73br2uag-a.oregon-postgres.render.com/adil_database')
+# PostgreSQL connection configuration
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get(
+    'DATABASE_URL', 
+    'postgresql://adil_4l0q_user:FKiVn2QVFD87uSu9KfijP1ODPWSv6jrV@dpg-cvspsq15pdvs73cvfgcg-a.oregon-postgres.render.com/adil_4l0q'
+)
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # Redis connection configuration (optional, only if Redis is used)
